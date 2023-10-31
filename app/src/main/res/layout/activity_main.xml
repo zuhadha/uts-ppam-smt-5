@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@drawable/loginbg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="50dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:clipToPadding="false"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Store"
+            android:id="@+id/store"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/brown"
+            tools:ignore="InvalidId">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/kecamatan"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="10dp"
+            android:elevation="4dp"
+            android:paddingLeft="10dp"
+            >
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Name"
+            android:id="@+id/yourname"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/brown"
+            android:layout_marginTop="20dp"
+            >
+        </TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFF"
+            android:elevation="4dp"
+            android:id="@+id/yournameform"
+            android:inputType="text"
+            android:text="@string/pleasefillyourname"
+            android:layout_marginBottom="20px"
+            android:paddingLeft="10dp"
+            >
+        </EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:text="Submit"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

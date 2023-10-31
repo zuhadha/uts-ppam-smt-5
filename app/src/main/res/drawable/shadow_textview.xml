@@ -1,0 +1,14 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" /> <!-- Adjust the radius as needed -->
+            <solid android:color="@color/black" /> <!-- Background color -->
+        </shape>
+    </item>
+    <item android:right="2dp" android:left="2dp" android:top="2dp" android:bottom="10dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" /> <!-- Should match the radius of the background shape -->
+            <solid android:color="@color/white" /> <!-- Background color for the shadow area -->
+        </shape>
+    </item>
+</layer-list>
